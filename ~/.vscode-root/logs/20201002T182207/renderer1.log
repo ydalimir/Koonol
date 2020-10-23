@@ -1,0 +1,1 @@
+[2020-10-02 18:57:54.347] [renderer1] [warning] UNRESPONSIVE extension host, 'vscode.npm' took 100% of 3821.481ms, saved PROFILE here: '/tmp/exthost-2ceb5a.cpuprofile' [{"id":"vscode.npm","total":3821149,"percentage":100}]
