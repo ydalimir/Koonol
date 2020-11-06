@@ -1,27 +1,44 @@
+import React, { useState, useEffect, useCallback } from "react";
+import { StyleSheet, View, Text } from "react-native";
+import { Icon } from "react-native-elements";
+import { firebaseApp } from "../../utils/firebase";
+import firebase from "firebase/app";
 
-import React from 'react';
-import {  Text, View ,StyleSheet } from 'react-native';
-import {Icon} from 'react-native-elements'
 
-export default function Restaurants() {
+
+
+
+export default function Restaurants(props) {
+
+  const {navigation } = props
+  const [user, setUser] = useState(null);
+  
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged((userInfo) => {
+      setUser(userInfo);
+    });
+  }, []);
+
+  
+
   return (
-    <View style={styles.viewBody} >
-      <Text> Restaurants</Text>
-      <Icon
-      reverse
-      type="material-comunity"
-      name="plus"
-      color="#e3e3e3"
-      containerStyle={styles.btnContainer}
-      
-      />
+    <View style={styles.viewBody}>
+     <Text> Restaurants</Text>
 
-     
-      
+      {user && (
+        <Icon
+          reverse
+          type="material-community"
+          name="plus"
+          color="#00a680"
+          containerStyle={styles.btnContainer}
+          onPress={() => navigation.navigate("add-restaurant")}
+        
+        />
+      )}
     </View>
   );
 }
-
 
 const styles = StyleSheet.create({
   viewBody: {
@@ -31,8 +48,9 @@ const styles = StyleSheet.create({
   btnContainer: {
     position: "absolute",
     bottom: 10,
-    right:10
-
+    right: 10,
+    shadowColor: "black",
+    shadowOffset: { width: 2, height: 2 },
+    shadowOpacity: 0.5,
   },
-  
 });
