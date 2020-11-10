@@ -10,7 +10,7 @@ export default function AddRestaurant(props) {
   const toastRef = useRef();
 
   return (
-    <View>
+    <View >
       <AddRestaurantForm
         toastRef={toastRef}
         setIsLoading={setIsLoading}

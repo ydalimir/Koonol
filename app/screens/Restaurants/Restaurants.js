@@ -30,7 +30,7 @@ export default function Restaurants(props) {
           reverse
           type="material-community"
           name="plus"
-          color="#00a680"
+          color="#6B9AEC"
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("add-restaurant")}
         
