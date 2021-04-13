@@ -8,9 +8,9 @@ export default function Register() {
   const toastRef = useRef();
 
   return (
-    <KeyboardAwareScrollView>
+    <KeyboardAwareScrollView style={styles.backgroundblanco}>
       <Image
-        source={require("../../../assets/img/5-tenedores-letras-icono-logo.png")}
+        source={require("../../../assets/img/undrawlog.png")}
         resizeMode="contain"
         style={styles.logo}
       />
@@ -32,4 +32,7 @@ const styles = StyleSheet.create({
     marginRight: 40,
     marginLeft: 40,
   },
+  backgroundblanco:{
+    backgroundColor:"#FFFFFF",
+  }
 });

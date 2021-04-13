@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View , ScrollView} from "react-native";
 import { AirbnbRating, Button, Input } from "react-native-elements";
 import Toast from "react-native-easy-toast";
 import Loading from "../../components/Loading";
@@ -74,7 +74,7 @@ export default function AddReviewRestaurant(props) {
   };
 
   return (
-    <View style={styles.viewBody}>
+    <ScrollView style={styles.viewBody}>
       <View style={styles.viewRating}>
         <AirbnbRating
           count={5}
@@ -107,7 +107,7 @@ export default function AddReviewRestaurant(props) {
       </View>
       <Toast ref={toastRef} position="center" opacity={0.9} />
       <Loading isVisible={isLoading} text="Enviando comenario" />
-    </View>
+    </ScrollView>
   );
 }
 

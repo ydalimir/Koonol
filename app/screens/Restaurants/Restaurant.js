@@ -25,7 +25,9 @@ export default function Restaurant(props) {
   const [userLogged, setUserLogged] = useState(false);
   const toastRef = useRef();
 
-  navigation.setOptions({ title: name });
+  useEffect(() => {
+    navigation.setOptions({ title: name });
+  }, []);
 
   firebase.auth().onAuthStateChanged((user) => {
     user ? setUserLogged(true) : setUserLogged(false);

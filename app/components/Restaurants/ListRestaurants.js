@@ -46,8 +46,10 @@ function Restaurant(props) {
   const goRestaurant = () => {
     navigation.navigate("restaurant", {
       id,
-      name,
-    });
+      
+    }
+    
+    );
   };
 
   return (

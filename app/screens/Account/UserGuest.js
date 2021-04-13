@@ -7,17 +7,16 @@ export default function UserGuest() {
   const navigation = useNavigation();
 
   return (
-    <ScrollView centerContent={true} style={styles.viewBody}>
+    <ScrollView  centerContent={true} style={styles.viewBody , styles.backgroundblanco}>
       <Image
-        source={require("../../../assets/img/user-guest.jpg")}
+        source={require("../../../assets/img/carritocomida.png")}
         resizeMode="contain"
         style={styles.image}
       />
-      <Text style={styles.title}>Consulta tu perfil de 5 Tenedores</Text>
+      <Text style={styles.title}>Consulta tu perfil de koonol</Text>
       <Text style={styles.description}>
         ¿Como describirías tu mejor restaurante? Busca y visualiza los mejores
-        restaurantes de una forma sencilla, vota cual te ha gustado más y
-        comenta como ha sito tu experiencia.
+        restaurantes.
       </Text>
       <View style={styles.viewBtn}>
         <Button
@@ -61,4 +60,7 @@ const styles = StyleSheet.create({
   btnContainer: {
     width: "70%",
   },
+  backgroundblanco:{
+    backgroundColor:"#FFFFFF",
+  }
 });

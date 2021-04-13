@@ -10,7 +10,7 @@ export default function Login() {
   const toastRef = useRef();
 
   return (
-    <ScrollView>
+    <ScrollView style={styles.backgroundblanco}>
       <Image
         source={require("../../../assets/img/loginbase.png")}
         resizeMode="contain"
@@ -66,4 +66,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#00a680",
     margin: 40,
   },
+  backgroundblanco:{
+    backgroundColor:"#FFFFFF",
+  }
 });
