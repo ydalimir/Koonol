@@ -9,14 +9,15 @@ export default function UserGuest() {
   return (
     <ScrollView centerContent={true} style={styles.viewBody}>
       <Image
-        source={require("../../../assets/img/carritocomida.png")}
+        source={require("../../../assets/img/user-guest.jpg")}
         resizeMode="contain"
         style={styles.image}
       />
-      <Text style={styles.title}>Consulta tu perfil de koonol</Text>
+      <Text style={styles.title}>Consulta tu perfil de 5 Tenedores</Text>
       <Text style={styles.description}>
         ¿Como describirías tu mejor restaurante? Busca y visualiza los mejores
-        restaurantes.
+        restaurantes de una forma sencilla, vota cual te ha gustado más y
+        comenta como ha sito tu experiencia.
       </Text>
       <View style={styles.viewBtn}>
         <Button
@@ -24,7 +25,6 @@ export default function UserGuest() {
           buttonStyle={styles.btnStyle}
           containerStyle={styles.btnContainer}
           onPress={() => navigation.navigate("login")}
-         
         />
       </View>
     </ScrollView>
@@ -33,9 +33,8 @@ export default function UserGuest() {
 
 const styles = StyleSheet.create({
   viewBody: {
-  
-    backgroundColor:"#FFFFFF",
-
+    marginLeft: 30,
+    marginRight: 30,
   },
   image: {
     height: 300,
@@ -57,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   btnStyle: {
-    backgroundColor: "#6B9AEC",
+    backgroundColor: "#00a680",
   },
   btnContainer: {
     width: "70%",

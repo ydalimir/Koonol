@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet ,Image } from "react-native";
+import { StyleSheet } from "react-native";
 import { Overlay } from "react-native-elements";
 
 export default function Modal(props) {
@@ -8,7 +8,6 @@ export default function Modal(props) {
   const closeModal = () => setIsVisible(false);
 
   return (
-    
     <Overlay
       isVisible={isVisible}
       windowBackgroundColor="rgba(0,0,0,0.5)"

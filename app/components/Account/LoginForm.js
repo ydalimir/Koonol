@@ -48,7 +48,7 @@ export default function LoginForm(props) {
         rightIcon={
           <Icon
             type="material-community"
-            name="account"
+            name="at"
             iconStyle={styles.iconRight}
           />
         }
@@ -65,7 +65,6 @@ export default function LoginForm(props) {
             name={showPassword ? "eye-off-outline" : "eye-outline"}
             iconStyle={styles.iconRight}
             onPress={() => setShowPassword(!showPassword)}
-
           />
         }
       />
@@ -103,7 +102,7 @@ const styles = StyleSheet.create({
     width: "95%",
   },
   btnLogin: {
-    backgroundColor: "#6B9AEC",
+    backgroundColor: "#00a680",
   },
   iconRight: {
     color: "#c1c1c1",

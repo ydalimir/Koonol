@@ -38,7 +38,6 @@ export default function InfoUser(props) {
           .catch(() => {
             toastRef.current.show("Error al actualizar el avatar.");
           });
-        
       }
     }
   };
@@ -82,7 +81,7 @@ export default function InfoUser(props) {
         source={
           photoURL
             ? { uri: photoURL }
-            : require("../../../assets/img/userimgprofile.png")
+            : require("../../../assets/img/avatar-default.jpg")
         }
       />
       <View>
@@ -112,5 +111,3 @@ const styles = StyleSheet.create({
     paddingBottom: 5,
   },
 });
-
-
