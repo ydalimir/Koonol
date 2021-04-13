@@ -23,6 +23,11 @@
       "favicon": "./assets/favicon.png"
     },
     "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDUVbviWfDTyMJ10zcdZNF1sb-5gOU-970"
+        }
+      },
       "permissions": [
         "CAMERA_ROLL",
         "READ_EXTERNAL_STORAGE",
@@ -30,7 +35,8 @@
         "LOCATION",
         "ACCESS_COARSE_LOCATION",
         "ACCESS_FINE_LOCATION"
-      ]
+      ],
+      "package": "com.ydalimir16.koonolApp"
     },
     "description": "AVANCE",
     "githubUrl": "https://github.com/ydalimir/Koonol.git"
