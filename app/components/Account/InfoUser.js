@@ -17,6 +17,8 @@ export default function InfoUser(props) {
     const resultPermission = await Permissions.askAsync(
       Permissions.CAMERA_ROLL
     );
+
+    
     const resultPermissionCamera =
       resultPermission.permissions.cameraRoll.status;
 
@@ -38,6 +40,7 @@ export default function InfoUser(props) {
           .catch(() => {
             toastRef.current.show("Error al actualizar el avatar.");
           });
+        
       }
     }
   };
@@ -81,7 +84,7 @@ export default function InfoUser(props) {
         source={
           photoURL
             ? { uri: photoURL }
-            : require("../../../assets/img/avatar-default.jpg")
+            : require("../../../assets/img/userimgprofile.png")
         }
       />
       <View>
@@ -111,3 +114,5 @@ const styles = StyleSheet.create({
     paddingBottom: 5,
   },
 });
+
+
