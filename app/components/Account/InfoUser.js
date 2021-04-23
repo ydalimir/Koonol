@@ -15,12 +15,12 @@ export default function InfoUser(props) {
 
   const changeAvatar = async () => {
     const resultPermission = await Permissions.askAsync(
-      Permissions.CAMERA_ROLL
+      Permissions.CAMERA
     );
 
     
     const resultPermissionCamera =
-      resultPermission.permissions.cameraRoll.status;
+      resultPermission.permissions.camera.status;
 
     if (resultPermissionCamera === "denied") {
       toastRef.current.show("Es necesario aceptar los permisos de la galeria");
