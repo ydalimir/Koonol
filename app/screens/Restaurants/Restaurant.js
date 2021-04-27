@@ -172,13 +172,13 @@ function RestaurantInfo(props) {
       action: null,
     },
     {
-      text: "111 222 333",
+      text: "9993101452",
       iconName: "phone",
       iconType: "material-community",
       action: null,
     },
     {
-      text: "xAgustin93@gmail.com",
+      text: "ydalimir12arevalo16@outlook.es",
       iconName: "at",
       iconType: "material-community",
       action: null,
