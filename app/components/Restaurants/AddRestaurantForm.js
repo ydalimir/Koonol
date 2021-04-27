@@ -125,9 +125,9 @@ function ImageRestaurant(props) {
         source={
           imagenRestaurant
             ? { uri: imagenRestaurant }
-            : require("../../../assets/img/no-image.png")
+            : require("../../../assets/img/focus.png")
         }
-        style={{ width: widthScreen, height: 200 }}
+        style={{ width: widthScreen, height: 215 }}
       />
     </View>
   );
@@ -325,6 +325,7 @@ function UploadImage(props) {
 const styles = StyleSheet.create({
   scrollView: {
     height: "100%",
+    backgroundColor: "white",
   },
   viewForm: {
     marginLeft: 10,
