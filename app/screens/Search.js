@@ -46,7 +46,7 @@ export default function Search(props) {
 
 function NoFoundRestaurants() {
   return (
-    <View style={{ flex: 1, alignItems: "center" }}>
+    <View style={{ flex: 1, alignItems: "center"  }}>
       <Image
         source={require("../../assets/img/no-result-found.png")}
         resizeMode="cover"
